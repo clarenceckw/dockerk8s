@@ -33,7 +33,7 @@ spec:
               topologyKey: "kubernetes.io/hostname"
       containers:
       - name: apiserver
-        image: harishpandu43/sba_api_image
+        image: clarenceckw/sba-apiserver
         env:
         - name: spring.datasource.url
           value: "jdbc:postgresql://postgres:5432/app"
