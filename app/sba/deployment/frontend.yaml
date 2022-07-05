@@ -19,6 +19,6 @@ spec:
         image: harishpandu43/sba-frontend
         env:
         - name: REACT_APP_API_URL
-          value: "https://scbcepb3u18-app.brainupgrade.net/api/"
+          value: "https://scbcepb3u13-app.brainupgrade.net/api/"
         ports:
         - containerPort: 3000
