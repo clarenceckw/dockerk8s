@@ -14,6 +14,13 @@ spec:
       labels:
         app: apiserver
     spec:
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/zone
+        whenUnsatisfiable: DoNotSchedule
+        labelSelector:
+          matchLabels:
+            app: one-pod-per-zone
       affinity:
           podAffinity:
             requiredDuringSchedulingIgnoredDuringExecution:
